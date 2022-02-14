@@ -14,6 +14,10 @@ const PokeList = () => {
   const [pokemon, setPokemon] = useState([])
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
+  
+  useEffect(() => {
     const urlParams = qs.parse(window.location.search, { ignoreQueryPrefix: true })
     if (pokeList.length !== 0) {
         const pokemon = pokeList.filter(name => name.name === urlParams.name)
