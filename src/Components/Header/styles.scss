@@ -1,0 +1,18 @@
+@import '../../../scss/variables/colors.scss';
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 4px;
+    background-color: $PrimaryColorDark;
+    box-shadow: 0 0px 4px 2px $SecondaryColor;
+    position: relative;
+
+    &__logo {
+        &:hover {
+            cursor: pointer;
+            transition: ease-in 200ms;
+            transform: rotate(180deg);
+        }
+    }
+}

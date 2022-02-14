@@ -1,0 +1,8 @@
+@import '../../../scss/variables/colors.scss';
+
+.layout {
+    background: linear-gradient(to right, $PrimaryBackgroundDark 0%,$PrimaryGray 100%);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
